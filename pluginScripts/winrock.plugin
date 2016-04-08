@@ -11,5 +11,5 @@ repositories {
   maven { url "https://github.com/kaven125/artifacts/raw/master/repo/" }
 }
 
-if (!project.plugins.findPlugin(winrock-plugin))
+if (!project.plugins.findPlugin(winrock.gradle.WinrockPlugin))
   project.apply(plugin: winrock-plugin)
