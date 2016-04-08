@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        maven { url "https://github.com/kaven125/artifacts/raw/master/repo/" }
+    }
+    dependencies {
+        classpath "io.mydaourite:winrock-gradle-plugin:+"
+    }
+}
+
+repositories {
+  maven { url "https://github.com/kaven125/artifacts/raw/master/repo/" }
+}
+
+if (!project.plugins.findPlugin(winrock-plugin))
+  project.apply(plugin: winrock-plugin)
