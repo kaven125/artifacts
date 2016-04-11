@@ -3,7 +3,7 @@ buildscript {
         maven { url "https://github.com/kaven125/artifacts/raw/master/repo/" }
     }
     dependencies {
-        classpath "io.mydaourite:winrock-gradle-plugin:1.5"
+        classpath "io.mydaourite:winrock-gradle-plugin:+"
     }
 }
 
