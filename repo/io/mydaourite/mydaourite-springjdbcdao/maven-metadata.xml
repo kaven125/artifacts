@@ -2,11 +2,12 @@
 <metadata>
   <groupId>io.mydaourite</groupId>
   <artifactId>mydaourite-springjdbcdao</artifactId>
-  <version>1.6.0</version>
   <versioning>
+    <release>1.6.1</release>
     <versions>
       <version>1.6.0</version>
+      <version>1.6.1</version>
     </versions>
-    <lastUpdated>20160407030232</lastUpdated>
+    <lastUpdated>20160825064419</lastUpdated>
   </versioning>
 </metadata>
