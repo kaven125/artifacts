@@ -42,63 +42,63 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aspects</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
-      <version>4.2.3.RELEASE</version>
+      <version>4.3.7.RELEASE</version>
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
@@ -154,7 +154,7 @@
     <dependency>
       <groupId>io.mydaourite</groupId>
       <artifactId>MyDAOurite-SpringAdvice</artifactId>
-      <version>+</version>
+      <version>1.1.1</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
