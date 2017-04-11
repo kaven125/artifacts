@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.mydaourite</groupId>
   <artifactId>MyDAOurite-SpringAdvice</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <dependencies>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
