@@ -38,6 +38,7 @@
       <artifactId>netty-all</artifactId>
       <version>4.1.14.Final</version>
       <scope>runtime</scope>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
