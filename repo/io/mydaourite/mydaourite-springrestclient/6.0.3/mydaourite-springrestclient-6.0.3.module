@@ -1,0 +1,883 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.mydaourite",
+    "module": "mydaourite-springrestclient",
+    "version": "6.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context-support",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-webmvc",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aspects",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-test",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-core",
+          "version": {
+            "requires": "4.0.2.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.ws",
+          "module": "spring-ws-core",
+          "version": {
+            "requires": "2.4.0.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-remoting",
+          "version": {
+            "requires": "2.0.8"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "javax.xml",
+          "module": "jaxrpc-api",
+          "version": {
+            "requires": "1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.axis",
+          "module": "axis",
+          "version": {
+            "requires": "1.4"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "axis",
+          "module": "axis-wsdl4j",
+          "version": {
+            "requires": "1.5.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "commons-discovery",
+          "module": "commons-discovery",
+          "version": {
+            "requires": "0.5"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents",
+          "module": "httpclient",
+          "version": {
+            "requires": "4.5.3"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents.client5",
+          "module": "httpclient5",
+          "version": {
+            "requires": "5.1.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents.core5",
+          "module": "httpcore5",
+          "version": {
+            "requires": "5.1.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-csv",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-xml",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.codehaus.woodstox",
+          "module": "woodstox-core-asl",
+          "version": {
+            "requires": "4.4.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "io.mydaourite",
+          "module": "MyDAOurite-SpringAdvice",
+          "version": {
+            "requires": "1.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.jayway.jsonpath",
+          "module": "json-path",
+          "version": {
+            "requires": "2.2.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "mydaourite-springrestclient-6.0.3.jar",
+          "url": "mydaourite-springrestclient-6.0.3.jar",
+          "size": 86682,
+          "sha512": "05ff786a33281dc6fd9b79fbf377d7e80d8e6382898fa0dc657430b5b8f2f71e518fe3876f0a0ff7858e515f498c72949f3890e51a67b2c111e24ff5623e346f",
+          "sha256": "0ae38ad98ed8790e2410c29071fbaa377b40d521ff8278cafe1ce9b58e5b3f55",
+          "sha1": "b751021b6260254cc45d042985a2188255eb5f3e",
+          "md5": "69613cc743cd315177464fa79e15952d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "jakarta.annotation",
+          "module": "jakarta.annotation-api",
+          "version": {
+            "requires": "2.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "jakarta.xml.bind",
+          "module": "jakarta.xml.bind-api",
+          "version": {
+            "requires": "4.0.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.25"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context-support",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-webmvc",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aspects",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-test",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "6.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-core",
+          "version": {
+            "requires": "4.0.2.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.ws",
+          "module": "spring-ws-core",
+          "version": {
+            "requires": "2.4.0.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-remoting",
+          "version": {
+            "requires": "2.0.8"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "javax.xml",
+          "module": "jaxrpc-api",
+          "version": {
+            "requires": "1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.axis",
+          "module": "axis",
+          "version": {
+            "requires": "1.4"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "axis",
+          "module": "axis-wsdl4j",
+          "version": {
+            "requires": "1.5.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "commons-discovery",
+          "module": "commons-discovery",
+          "version": {
+            "requires": "0.5"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents",
+          "module": "httpclient",
+          "version": {
+            "requires": "4.5.3"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents.client5",
+          "module": "httpclient5",
+          "version": {
+            "requires": "5.1.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.httpcomponents.core5",
+          "module": "httpcore5",
+          "version": {
+            "requires": "5.1.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-csv",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-xml",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.codehaus.woodstox",
+          "module": "woodstox-core-asl",
+          "version": {
+            "requires": "4.4.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-yaml",
+          "version": {
+            "requires": "2.0.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "io.mydaourite",
+          "module": "MyDAOurite-SpringAdvice",
+          "version": {
+            "requires": "1.1.1"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "com.jayway.jsonpath",
+          "module": "json-path",
+          "version": {
+            "requires": "2.2.0"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-web",
+          "version": {
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j-impl",
+          "version": {
+            "requires": "2.17.2"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-all",
+          "version": {
+            "requires": "4.1.14.Final"
+          },
+          "excludes": [
+            {
+              "group": "ch.qos.logback",
+              "module": "logback-classic"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "mydaourite-springrestclient-6.0.3.jar",
+          "url": "mydaourite-springrestclient-6.0.3.jar",
+          "size": 86682,
+          "sha512": "05ff786a33281dc6fd9b79fbf377d7e80d8e6382898fa0dc657430b5b8f2f71e518fe3876f0a0ff7858e515f498c72949f3890e51a67b2c111e24ff5623e346f",
+          "sha256": "0ae38ad98ed8790e2410c29071fbaa377b40d521ff8278cafe1ce9b58e5b3f55",
+          "sha1": "b751021b6260254cc45d042985a2188255eb5f3e",
+          "md5": "69613cc743cd315177464fa79e15952d"
+        }
+      ]
+    }
+  ]
+}
